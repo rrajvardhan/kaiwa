@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/cherry-blossom-blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Paytone One', sans-serif;
+}
+
+::selection {
+    background: #2d80a6;
+    color: #b7d5dd;
+}
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #091b34;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e8bab;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d80a6;
+}
+
+.sb-hidden::-webkit-scrollbar {
+    display: none;
+}

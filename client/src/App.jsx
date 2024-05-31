@@ -17,7 +17,7 @@ function App() {
 
     useEffect(() => {
         if (authUser) {
-            const socket = io('http://localhost:3000', {
+            const socket = io('https://kaiwa.onrender.com/', {
                 query: {
                     userId: authUser._id,
                 },

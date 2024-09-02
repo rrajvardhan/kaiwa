@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
 const Login = (props) => {
     const { authUser, setAuthUser } = props
     const [loading, setLoading] = useState(false)
+
+    const navigate = useNavigate()
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -37,6 +39,7 @@ const Login = (props) => {
             //set user
             setAuthUser(data)
             localStorage.setItem('authUser', JSON.stringify(data))
+            navigate('/')
         } catch (error) {
             console.log(error.message)
             toast.error(error.message)

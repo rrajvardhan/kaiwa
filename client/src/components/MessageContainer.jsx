@@ -27,7 +27,7 @@ const Messages = ({ selectedConversation, authUser, socket }) => {
         return () => {
             socket?.off('newMessage')
         }
-    }, [socket,setMessages,messages])
+    }, [socket])
 
     useEffect(() => {
         async function fetchData() {

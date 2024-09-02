@@ -18,6 +18,6 @@ Kaiwa is a real-time chat application that facilitates seamless communication be
 
 ## Live Demo
 
-Access the live application at [https://kaiwa.onrender.com/login](https://kaiwa.onrender.com/login).
+Access the live application at [https://kaiwa.onrender.com](https://kaiwa.onrender.com).
 
 
